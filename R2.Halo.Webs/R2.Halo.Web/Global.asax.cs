@@ -1,0 +1,33 @@
+﻿using R2.Disaster.Core.Infrastructure;
+using R2.Disaster.WebFramework.EmbeddedViews;
+using R2.Disaster.WebFramework.Mvc.Routes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Hosting;
+using System.Web.Mvc;
+using System.Web.Routing;
+
+namespace R2.Halo.Web
+{
+    public class MvcApplication : System.Web.HttpApplication
+    {
+        protected void Application_Start()
+        {
+            AreaRegistration.RegisterAllAreas();
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            RegisterPluginRoute(RouteTable.Routes);
+
+            var embeddedViewResolver = EngineContext.Current.Resolve<IEmbeddedViewResolver>();
+            var embeddedProvider = new EmbeddedViewVirtualPathProvider(embeddedViewResolver.GetEmbeddedViews());
+            HostingEnvironment.RegisterVirtualPathProvider(embeddedProvider);
+        }
+
+        public static void RegisterPluginRoute(RouteCollection routes)
+        {
+            RoutePublisher routePublisher = new RoutePublisher(new WebAppTypeFinder());
+            routePublisher.RegisterRoutes(routes);
+        }
+    }
+}
