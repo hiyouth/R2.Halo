@@ -17,8 +17,15 @@ namespace R2.Halo.Web
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces:new[] { "R2.Halo.Web.Controllers" }
+                namespaces: new[] { "R2.Halo.Web.Controllers" }
             );
+
+            //routes.MapRoute(
+            //    "Default", // Route name
+            //    "{controller}/{action}/{id}", // URL with parameters
+            //    new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+            //    new[] { "Nop.Web.Controllers" }
+            //);
 
     //        routes.MapRoute(
     //name: "Apps",

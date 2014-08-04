@@ -16,8 +16,9 @@ namespace R2.Halo.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
             RegisterPluginRoute(RouteTable.Routes);
+
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             var embeddedViewResolver = EngineContext.Current.Resolve<IEmbeddedViewResolver>();
             var embeddedProvider = new EmbeddedViewVirtualPathProvider(embeddedViewResolver.GetEmbeddedViews());
