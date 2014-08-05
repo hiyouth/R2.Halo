@@ -95,6 +95,7 @@
     <ProjectReference Include="..\..\..\R2.Disaster\WebAPI\R2.Disaster.WebFramework\R2.Disaster.WebFramework.csproj">
       <Project>{3d8bd5f1-76ae-41dd-a26d-acccdff00eed}</Project>
       <Name>R2.Disaster.WebFramework</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
