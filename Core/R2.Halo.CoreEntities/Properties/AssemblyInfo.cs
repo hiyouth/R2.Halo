@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("R2.Halo.Apps.Test")]
+[assembly: AssemblyTitle("R2.Halo.CoreEntities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("R2.Halo.Apps.Test")]
+[assembly: AssemblyProduct("R2.Halo.CoreEntities")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("e57330f7-a013-4c2c-9418-b009ae0fe62e")]
+[assembly: Guid("99450c86-76e5-48b5-a332-1f53d2faf67c")]
 
 // 程序集的版本信息由下面四个值组成:
 //

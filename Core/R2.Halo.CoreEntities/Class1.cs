@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace R2.Apps.Test
+namespace R2.Halo.CoreEntities
 {
     public class Class1
     {
-
     }
 }
