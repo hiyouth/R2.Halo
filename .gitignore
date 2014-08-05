@@ -49,7 +49,7 @@ Thumbs.db
 *.log
 [Bb]in
 [Dd]ebug*/
-Apps/
+Webs/R2.Halo.Web/Apps/
 *.lib
 *.sbr
 obj/
